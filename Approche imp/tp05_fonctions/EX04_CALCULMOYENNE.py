@@ -9,6 +9,6 @@ def calcul_moyenne(a):
             moyenne = somme/nbr_val
     return print(moyenne)
 
-calcul_moyenne(5)
+calcul_moyenne(10)
 
 
