@@ -3,5 +3,5 @@ def palindrome(chaine):
         return print("c'un palandrin")
     else:
         return print("ce n'est pas un palandrin")
-palindrome("bob")
+palindrome("ratar")
 
