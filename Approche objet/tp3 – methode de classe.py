@@ -1,10 +1,6 @@
 class Zoo:
     animaux = {}
 
-    def __init__(self, animaux_presents, nombretot):
-        self.animaux_presents = animaux_presents
-        self.nombretot = nombretot
-
     @classmethod
     def ajouter_animaux(cls, animal, nombre):
         if animal not in cls.animaux:
