@@ -17,29 +17,10 @@ class Personne:
         self.nom = nom
         self.prenom = prenom
         self.adresse = adresse
-    def set_nom(self,nom):
-        self.nom = nom
-    def set_prenom(self,prenom):
-        self.prenom = prenom
-    def set_adresse(self,adresse):
-        self.adresse = adresse
-    def dire_nom(self):
-        return "Son nom est :"+ self.nom
-    def dire_prenom(self):
-        return "Son prenom est :"+ self.prenom
-    def dire_adresse(self):
-        return self.adresse
-    def afficher(self):
-        print(self.nom, self.prenom, self.adresse.code_postal,self.adresse.ville)
-pers1 = Personne("madi", "bo", adr1)
-pers1.set_nom("NDi")
-pers1.set_prenom("Aye")
-last_name = pers1.dire_prenom()
-name =pers1.dire_nom()
-print(name)
-print(last_name)
-attributs =pers1.afficher()
-pers2 = Personne("embi", "CI", adr2)
+
+
+pers1 = Personne("madi".upper(), "bo".upper(), adr1)
+pers2 = Personne("embi".upper(), "CI".upper(), adr2)
 print(pers1.nom, pers1.prenom, pers1.adresse.num_rue, pers1.adresse.libelle, pers1.adresse.code_postal,
       pers1.adresse.ville)
 print(pers2.nom, pers2.prenom, pers2.adresse.num_rue, pers2.adresse.libelle, pers2.adresse.code_postal,
