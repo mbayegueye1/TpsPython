@@ -19,6 +19,7 @@ class  LivreNumerique(Livre):
         self._format = format
     def afficher_infos(self):
         print(f"le titre: {self._titre}, l'auteur: {self._auteur} achetable: {self._achetable}, format:{self._format}")
+#if __name__ == "__main__":
 liste = []
 livrep1 = LivrePapier("Soufi mon ", "Elif Shafak", False,"abime")
 livrep2 = LivrePapier("Alerte sous les tropiques", "Cheikh  Diop",True,"Moyen")
