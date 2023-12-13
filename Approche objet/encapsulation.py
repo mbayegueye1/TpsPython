@@ -16,6 +16,7 @@ class Livre:
     @auteur.setter
     def auteur(self, nvauteur):
         self._auteur = nvauteur
+
     @property
     def achetable(self):
         return self._achetable
