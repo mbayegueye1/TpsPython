@@ -1,13 +1,13 @@
 class VilleException(Exception):
     def valider(self, ville):
         if not ville.nom:
-            raise self("Le nom n’est pas renseigné")
+            raise VilleException("Le nom n’est pas renseigné")
         if len(ville.nom.strip()) < 2:
-            raise self("Le nom fait moins de 2 caractères")
+            raise VilleException("Le nom fait moins de 2 caractères")
         if not ville.population:
-            raise self("La population n’est pas renseignée")
+            raise VilleException("La population n’est pas renseignée")
         if ville.population < 2000:
-            raise self("La population est inférieure à 2000 habitants")
+            raise VilleException("La population est inférieure à 2000 habitants")
 
 class Ville:
     def __init__(self, nom, population):
@@ -17,7 +17,7 @@ class Ville:
 # Création d'instances de Ville avec des erreurs et une sans erreur
 ville1 = Ville("Montpellier", 300000)
 ville2 = Ville("Pa", 1200)
-ville3 = Ville("Marseille", 500000)
+ville3 = Ville("Ma", 500)
 
 exceptions = VilleException()
 
