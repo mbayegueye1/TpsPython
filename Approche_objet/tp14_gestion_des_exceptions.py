@@ -14,7 +14,7 @@ class Ville:
         self.nom = nom
         self.population = population
 
-# Création d'instances de Ville avec des erreurs et une sans erreur
+
 ville1 = Ville("Montpellier", 300000)
 ville2 = Ville("Pa", 1200)
 ville3 = Ville("Ma", 500)
